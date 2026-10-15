@@ -1,4 +1,4 @@
-name: Issue
+name: Task
 description: A single, well-defined piece of work
 type: Task
 body:
@@ -11,7 +11,7 @@ body:
     id: description
     attributes:
       label: DESCRIPTION
-      description: What this issue does and why, in one or two sentences.
+      description: What this task does and why, in one or two sentences.
       value: "> "
     validations:
       required: true
@@ -55,4 +55,4 @@ body:
         Optional. Add an alert only if the content needs one: `[!NOTE]`, `[!TIP]`, `[!IMPORTANT]`, `[!WARNING]` or `[!CAUTION]`.
       placeholder: |
         > [!WARNING]
-        > Keep `@import "tailwindcss";` at the top of `app/globals.css`.
+        > This task changes shared configuration. Check the other modules after merging.
