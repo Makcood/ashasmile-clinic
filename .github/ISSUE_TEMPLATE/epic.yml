@@ -5,22 +5,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        Describe the overall goal. Once created, add each piece of work as a sub-issue of this epic.
+        Describe why this work matters and what will be true once it is complete. Once created, add each piece of work as a sub-issue of this epic.
 
   - type: textarea
-    id: description
+    id: value-proposition
     attributes:
-      label: DESCRIPTION
-      description: What this epic achieves and why it matters.
-      value: "> "
-    validations:
-      required: true
-
-  - type: textarea
-    id: scope
-    attributes:
-      label: SCOPE
-      description: The areas of work this epic covers, and where it stops.
+      label: VALUE PROPOSITION
+      description: Why this epic matters to the user, in one or two sentences.
       value: "> "
     validations:
       required: true
