@@ -5,42 +5,22 @@ body:
   - type: markdown
     attributes:
       value: |
-        Describe one clear piece of work. If it belongs to an epic, add it as a sub-issue of that epic.
+        Describe one clear piece of work and how to confirm it is done. If it belongs to an epic, add it as a sub-issue of that epic.
 
   - type: textarea
-    id: description
+    id: value-proposition
     attributes:
-      label: DESCRIPTION
-      description: What this task does and why, in one or two sentences.
+      label: VALUE PROPOSITION
+      description: Why this task matters, in one sentence.
       value: "> "
     validations:
       required: true
 
   - type: textarea
-    id: scope
+    id: expected-outcome
     attributes:
-      label: SCOPE
-      description: What is included, and where the work stops.
-      value: "> "
-    validations:
-      required: true
-
-  - type: textarea
-    id: tasks
-    attributes:
-      label: TASKS
-      description: Break the work into small, concrete steps.
-      value: |
-        > - [ ] 
-        > - [ ] 
-    validations:
-      required: true
-
-  - type: textarea
-    id: acceptance-criteria
-    attributes:
-      label: ACCEPTANCE CRITERIA
-      description: How we know this is done. Each point should be clear and testable.
+      label: EXPECTED OUTCOME
+      description: The checks that prove the task is done. Each point should be clear and testable.
       value: |
         > - [ ] 
         > - [ ] 
