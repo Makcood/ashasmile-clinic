@@ -1,0 +1,63 @@
+name: Bug
+description: Something that does not work as intended
+type: Bug
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe what is broken and how to reproduce it. For an urgent fix in production, treat it as a hotfix and use a `hotfix/` branch.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: DESCRIPTION
+      description: What is wrong, in one or two sentences.
+      value: "> "
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: STEPS TO REPRODUCE
+      description: The exact steps that trigger the bug.
+      value: |
+        > 1. 
+        > 2. 
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: EXPECTED BEHAVIOUR
+      description: What should happen.
+      value: "> "
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behaviour
+    attributes:
+      label: ACTUAL BEHAVIOUR
+      description: What happens instead.
+      value: "> "
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: SCREENSHOTS
+      description: Optional. Screenshots or recordings, with the browser and device if relevant.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: NOTES
+      description: |
+        Optional. Add an alert only if the content needs one: `[!NOTE]`, `[!TIP]`, `[!IMPORTANT]`, `[!WARNING]` or `[!CAUTION]`.
+      placeholder: |
+        > [!CAUTION]
+        > This bug affects the production site.
