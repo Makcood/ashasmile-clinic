@@ -1,32 +1,56 @@
-/.phpunit.cache
-/bootstrap/ssr
+# Dependencies
 /node_modules
+/vendor
+
+# Build output
+/bootstrap/ssr
 /public/build
-/public/fonts-manifest.dev.json
 /public/hot
-/public/storage
-/storage/*.key
-/storage/pail
+/public/fonts-manifest.dev.json
+
+# Generated route helpers (Wayfinder)
 /resources/js/actions
 /resources/js/routes
 /resources/js/wayfinder
-/vendor
-.DS_Store
+
+# Storage
+/public/storage
+/storage/*.key
+/storage/pail
+
+# Testing
+/.phpunit.cache
+.phpunit.result.cache
+
+# Environment variables
 .env
 .env.backup
 .env.production
-.phpactor.json
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
+
+# Credentials
+/auth.json
+
+# Logs
 npm-debug.log
 yarn-error.log
-/auth.json
+
+# Local development
+Homestead.json
+Homestead.yaml
+.phpactor.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
 /.fleet
 /.idea
 /.nova
 /.vscode
 /.zed
+
+# AI tools
 /.agents
 /.amp
 /.claude
